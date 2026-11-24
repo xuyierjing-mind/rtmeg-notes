@@ -47,6 +47,7 @@ button{font:14px system-ui;padding:6px 12px;border-radius:6px;border:1px solid v
 <a href="#p5"><b>05</b>What to compute online</a>
 <a href="#p6"><b>06</b>Misc &amp; Python later</a>
 <a href="#p7"><b>07</b>Sources</a>
+<a href="#p8"><b>08</b>Contribute &amp; change log</a>
 <div style="margin-top:14px"><button onclick="tg()">Light / dark</button></div>
 </nav>
 <main>
@@ -228,7 +229,19 @@ end</pre>
 <li>[S12] <a href="https://www.fieldtriptoolbox.org/development/realtime/">FieldTrip: realtime index</a></li>
 <li>Your files: <code>rtMEG_操作員手冊.md</code> (曾至新, 2022), <code>Real-time_phase_estimation.md</code>, <code>suggestion.md</code></li>
 <li>Further reading on timing toolboxes: <a href="https://doi.org/10.3389/fpsyg.2020.585437">Hartmann &amp; Weisz, o_ptb (Front Psychol 2020)</a></li></ul>
-<div class="pg"><a href="#p6">← 06</a><span></span></div></section>
+<div class="pg"><a href="#p6">← 06</a><a href="#p8">08 Contribute →</a></div></section>
+
+<section id="p8"><h2>08 · Contribute &amp; change log</h2><p class="lead">How the lab keeps these notes correct.</p>
+<h3>How to contribute</h3>
+<ol class="steps"><li>Open the repository (<a href="https://github.com/xuyierjing-mind/rtmeg-notes">github.com/xuyierjing-mind/rtmeg-notes</a>) and create a branch.</li><li>Edit <code>index.html</code>. Each page is one <code>&lt;section id="pN"&gt;</code>; keep the order of pages 00–08.</li><li>Cite every outside fact as <code>[S#]</code> and add the source to page 07. Mark anything not checked against the original as “unverified”.</li><li>For lab measurements (page 03), write the date, system, software version, chunk size, and whether cHPI was on.</li><li>Add one line to the change log below and to <code>CHANGELOG.md</code>.</li><li>Open a pull request. One maintainer merges it, then reloads the published site to check it.</li></ol>
+<div class="box tip"><b>Keep it beginner-level.</b> If a detail is only needed to write your own server or protocol, link to the FieldTrip page instead of copying it.</div>
+<h3>Review reminders</h3>
+<ul><li>Re-check the FieldTrip Neuromag page (S5) for changes, since it was edited in August 2026.</li><li>Confirm page 02 still matches the current operator routine.</li><li>Resolve “unverified” notes against the original papers, then remove the marker.</li></ul>
+<h3>Change log</h3>
+<div class="wrapx"><table><tr><th>Date</th><th>Change</th></tr>
+<tr><td>2026-11-24</td><td>Added page 08 (contribute and change log).</td></tr>
+<tr><td>2026-11-24</td><td>First version: pages 00–07.</td></tr></table></div>
+<div class="pg"><a href="#p7">← 07</a><span></span></div></section>
 </main>
 <script>
 function tg(){var r=document.documentElement,d=matchMedia('(prefers-color-scheme:dark)').matches;var cur=r.dataset.theme||(d?'dark':'light');r.dataset.theme=cur==='dark'?'light':'dark'}
